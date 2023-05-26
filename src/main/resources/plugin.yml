@@ -1,0 +1,15 @@
+name: VolnirLobbyCore
+version: '${project.version}'
+main: net.volnir.volnirlobbycore.VolnirLobbyCore
+api-version: 1.19
+commands:
+  fly:
+    description: "Toggle flight."
+  pet:
+    description: "spawn pet"
+  setSpawn:
+    description: "Set the spawn location"
+  spawnnpc:
+    description: "Spawn an NPC."
+  test:
+    description: "test"
