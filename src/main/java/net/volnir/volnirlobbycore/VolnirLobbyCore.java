@@ -8,7 +8,7 @@ import net.volnir.volnirlobbycore.cosmeticbox.particles.gui.ParticleGuiClickEven
 import net.volnir.volnirlobbycore.cosmeticbox.pet.PetContainer;
 import net.volnir.volnirlobbycore.cosmeticbox.pet.PetGuiClick;
 import net.volnir.volnirlobbycore.cosmeticbox.pet.pets.RemovePetOnLeave;
-import net.volnir.volnirlobbycore.cosmeticbox.pet.tempCommand;
+import net.volnir.volnirlobbycore.cosmeticbox.pet.PetCommand;
 import net.volnir.volnirlobbycore.flysystem.FlyCommand;
 import net.volnir.volnirlobbycore.joinmessage.JoinMessageSend;
 import net.volnir.volnirlobbycore.jukebox.JukeBoxEvent;
@@ -41,7 +41,7 @@ public final class VolnirLobbyCore extends JavaPlugin {
 
         // Plugin startup logic
         this.getCommand("fly").setExecutor(new FlyCommand());
-        this.getCommand("pet").setExecutor(new tempCommand());
+        this.getCommand("pet").setExecutor(new PetCommand());
         this.getCommand("setSpawn").setExecutor(new SetSpawnCommand());
         this.getCommand("spawnnpc").setExecutor(new NpcSpawnCommand());
         this.getCommand("spawnnpc").setTabCompleter(new NpcSpawnCommand());
